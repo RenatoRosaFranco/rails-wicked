@@ -1,0 +1,12 @@
+<%= form_for(@product, { url: wizard_path, method: :put }) do |f| %>
+  
+  <div class="field">
+    <%= f.label :verification_code %>
+    <%= f.text_field :verification_code, value: nil, 
+    class: 'form-control', minlength: '4', maxlength: '4', required: 'required' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Next' %>
+  </div>
+<% end %>

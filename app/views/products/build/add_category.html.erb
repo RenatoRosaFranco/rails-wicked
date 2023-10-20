@@ -1,0 +1,11 @@
+<%= form_for(@product, { url: wizard_path, method: :put }) do |f| %>
+
+  <div class="field">
+    <%= f.label :category, 'Category' %>
+    <%= f.text_field :category, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Finish' %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+<%= form_for(@product) do |f| %>
+
+  <div class='field'>
+    <%= f.label :name, 'Product name' %>
+    <%= f.text_field :name, required: 'required' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Add' %>
+  </div>
+<% end %>
